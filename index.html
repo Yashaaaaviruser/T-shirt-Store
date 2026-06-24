@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pikachu Prints | T-Shirt Printing Store</title>
+  <meta name="description" content="Custom printed T-shirts, anime tees, streetwear and personalized designs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="logo">
+        <span class="logo-badge">PP</span>
+        <span>Pikachu Prints</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#custom">Custom Print</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="tag">Custom T-Shirt Printing</span>
+        <h1>Print your vibe on a T-shirt.</h1>
+        <p>
+          Anime tees, streetwear, custom logo prints, oversized fits and personalized gifts.
+          Choose a design or send your own design and place the order in minutes.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-primary">Shop T-Shirts</a>
+          <a href="#custom" class="btn btn-secondary">Custom Print</a>
+        </div>
+
+        <div class="hero-features">
+          <div class="feature-card">
+            <strong>Premium Cotton</strong>
+            <span>Comfort fit & durable print</span>
+          </div>
+          <div class="feature-card">
+            <strong>Custom Design</strong>
+            <span>Add your own text/logo/art</span>
+          </div>
+          <div class="feature-card">
+            <strong>Fast Orders</strong>
+            <span>Simple order form to your email</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card glow-card">
+          <img src="images/tee1.jpg" alt="Featured T-shirt" />
+          <div class="hero-card-info">
+            <h3>Anime Shadow Tee</h3>
+            <p>₹699 • Oversized • Black</p>
+            <button
+              class="btn btn-primary buy-btn"
+              data-product="Anime Shadow Tee"
+              data-price="699"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="section" id="products">
+    <div class="container">
+      <div class="section-head">
+        <h2>Featured T-Shirts</h2>
+        <p>Tap Buy Now and the order form will auto-fill the product for the customer.</p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <article class="product-card">
+          <div class="product-img">
+            <img src="images/tee1.jpg" alt="Anime Shadow Tee" />
+          </div>
+          <div class="product-body">
+            <h3>Anime Shadow Tee</h3>
+            <p>Bold anime streetwear print on premium cotton.</p>
+            <div class="product-meta">
+              <span class="price">₹699</span>
+              <span class="pill">Black</span>
+            </div>
+            <button class="btn btn-primary buy-btn" data-product="Anime Shadow Tee" data-price="699">
+              Buy Now
+            </button>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card">
+          <div class="product-img">
+            <img src="images/tee2.jpg" alt="Dragon Flame Tee" />
+          </div>
+          <div class="product-body">
+            <h3>Dragon Flame Tee</h3>
+            <p>High-energy fiery artwork print with soft fabric.</p>
+            <div class="product-meta">
+              <span class="price">₹749</span>
+              <span class="pill">White</span>
+            </div>
+            <button class="btn btn-primary buy-btn" data-product="Dragon Flame Tee" data-price="749">
+              Buy Now
+            </button>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card">
+          <div class="product-img">
+            <img src="images/tee3.jpg" alt="Minimal Aura Tee" />
+          </div>
+          <div class="product-body">
+            <h3>Minimal Aura Tee</h3>
+            <p>Clean minimal style with premium chest print.</p>
+            <div class="product-meta">
+              <span class="price">₹649</span>
+              <span class="pill">Beige</span>
+            </div>
+            <button class="btn btn-primary buy-btn" data-product="Minimal Aura Tee" data-price="649">
+              Buy Now
+            </button>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card">
+          <div class="product-img">
+            <img src="images/tee4.jpg" alt="Samurai Ink Tee" />
+          </div>
+          <div class="product-body">
+            <h3>Samurai Ink Tee</h3>
+            <p>Japanese brush-art inspired back print tee.</p>
+            <div class="product-meta">
+              <span class="price">₹799</span>
+              <span class="pill">Navy</span>
+            </div>
+            <button class="btn btn-primary buy-btn" data-product="Samurai Ink Tee" data-price="799">
+              Buy Now
+            </button>
+          </div>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="product-card">
+          <div class="product-img">
+            <img src="images/tee5.jpg" alt="Cyber Pulse Tee" />
+          </div>
+          <div class="product-body">
+            <h3>Cyber Pulse Tee</h3>
+            <p>Futuristic neon design with premium digital print.</p>
+            <div class="product-meta">
+              <span class="price">₹849</span>
+              <span class="pill">Grey</span>
+            </div>
+            <button class="btn btn-primary buy-btn" data-product="Cyber Pulse Tee" data-price="849">
+              Buy Now
+            </button>
+          </div>
+        </article>
+
+        <!-- Product 6 -->
+        <article class="product-card">
+          <div class="product-img">
+            <img src="images/tee6.jpg" alt="Custom Name Tee" />
+          </div>
+          <div class="product-body">
+            <h3>Custom Name Tee</h3>
+            <p>Add your name, quote or logo to a clean front print tee.</p>
+            <div class="product-meta">
+              <span class="price">₹899</span>
+              <span class="pill">Custom</span>
+            </div>
+            <button class="btn btn-primary buy-btn" data-product="Custom Name Tee" data-price="899">
+              Buy Now
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUSTOM PRINT -->
+  <section class="section alt-section" id="custom">
+    <div class="container custom-grid">
+      <div>
+        <div class="section-head left">
+          <h2>Custom T-Shirt Printing</h2>
+          <p>
+            Want your own logo, anime art, quote, business design, or team print?
+            Use the order form and mention your custom requirements.
+          </p>
+        </div>
+
+        <ul class="custom-list">
+          <li>✔ Front / back print options</li>
+          <li>✔ Name print / logo print / anime print</li>
+          <li>✔ Single piece or bulk orders</li>
+          <li>✔ Mention color, size, quantity and print notes</li>
+        </ul>
+
+        <button class="btn btn-primary open-custom-order">
+          Order Custom T-Shirt
+        </button>
+      </div>
+
+      <div class="custom-card">
+        <h3>What customer can send in the order</h3>
+        <div class="custom-info-grid">
+          <div class="info-box">Name</div>
+          <div class="info-box">Phone</div>
+          <div class="info-box">Email</div>
+          <div class="info-box">Address</div>
+          <div class="info-box">Size</div>
+          <div class="info-box">Quantity</div>
+          <div class="info-box">Color</div>
+          <div class="info-box">Custom print notes</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <h2>Contact / Quick Order</h2>
+        <p>
+          Customers can use this form to order any T-shirt or ask for a custom print.
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-copy">
+          <h3>Need a custom design?</h3>
+          <p>
+            Open the order form, choose “Custom Print Request”, and write the design details.
+            The order will be sent to your email.
+          </p>
+          <button class="btn btn-primary open-custom-order">Place Order</button>
+        </div>
+
+        <div class="contact-note">
+          <h4>Owner instructions</h4>
+          <p>
+            Replace the form email with your own email address in the HTML file before publishing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div>
+        <h3>Pikachu Prints</h3>
+        <p>Custom printed T-shirts for anime, streetwear and personal branding.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#custom">Custom Print</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ORDER MODAL -->
+  <div class="modal" id="orderModal" aria-hidden="true">
+    <div class="modal-overlay" id="modalOverlay"></div>
+
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="orderTitle">
+      <button class="close-modal" id="closeModal" aria-label="Close">✕</button>
+
+      <div class="modal-head">
+        <h2 id="orderTitle">Place Your Order</h2>
+        <p>Fill the details. This order will be sent directly to our email.</p>
+      </div>
+
+      <!-- FORM -->
+      <form
+        id="orderForm"
+        class="order-form"
+        action="https://formsubmit.co/mr.badboy.yash@gmail.com"
+        method="POST"
+      >
+        <!-- FormSubmit settings -->
+        <input type="hidden" name="_subject" value="New T-Shirt Order - Pikachu Prints" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_next" value="thanks.html" />
+        <!-- Honeypot anti-spam -->
+        <input type="text" name="_honey" class="hidden-honey" tabindex="-1" autocomplete="off" />
+
+        <!-- If you want no captcha, uncomment next line (not recommended) -->
+        <!-- <input type="hidden" name="_captcha" value="false" /> -->
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="customerName">Full Name</label>
+            <input type="text" id="customerName" name="Customer Name" placeholder="Enter full name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="customerPhone">Phone Number</label>
+            <input type="tel" id="customerPhone" name="Phone Number" placeholder="Enter phone number" required />
+          </div>
+
+          <div class="form-group">
+            <label for="customerEmail">Email</label>
+            <input type="email" id="customerEmail" name="Customer Email" placeholder="Enter email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="cityState">City / State</label>
+            <input type="text" id="cityState" name="City / State" placeholder="Example: Pune, Maharashtra" required />
+          </div>
+
+          <div class="form-group full">
+            <label for="customerAddress">Full Delivery Address</label>
+            <textarea id="customerAddress" name="Delivery Address" placeholder="House no, area, city, state, pincode" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="productName">Product</label>
+            <input type="text" id="productName" name="Product Name" placeholder="Selected product" required />
+          </div>
+
+          <div class="form-group">
+            <label for="productPrice">Price (₹)</label>
+            <input type="text" id="productPrice" name="Product Price" placeholder="Price" required />
+          </div>
+
+          <div class="form-group">
+            <label for="size">Size</label>
+            <select id="size" name="Size" required>
+              <option value="">Select size</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+              <option>XXL</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="Quantity" min="1" value="1" required />
+          </div>
+
+          <div class="form-group">
+            <label for="color">Preferred Color</label>
+            <input type="text" id="color" name="Preferred Color" placeholder="Black / White / Grey etc." />
+          </div>
+
+          <div class="form-group">
+            <label for="printType">Order Type</label>
+            <select id="printType" name="Order Type" required>
+              <option value="Ready Product Order">Ready Product Order</option>
+              <option value="Custom Print Request">Custom Print Request</option>
+            </select>
+          </div>
+
+          <div class="form-group full">
+            <label for="customNotes">Custom Print Notes / Design Instructions</label>
+            <textarea
+              id="customNotes"
+              name="Custom Notes"
+              placeholder="Write logo text, anime design name, front/back print, sleeve print, special request, etc."
+            ></textarea>
+          </div>
+
+          <div class="form-group full">
+            <label for="orderSummary">Order Summary</label>
+            <textarea
+              id="orderSummary"
+              name="Order Summary"
+              readonly
+              placeholder="Auto-generated summary will appear here"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary big-btn">Place Order</button>
+          <button type="button" class="btn btn-secondary" id="cancelModal">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

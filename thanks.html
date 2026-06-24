@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Received | Pikachu Prints</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body{
+      margin:0;
+      min-height:100vh;
+      display:grid;
+      place-items:center;
+      font-family:Poppins,sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(124,77,255,0.18), transparent 20%),
+        radial-gradient(circle at top left, rgba(255,77,103,0.18), transparent 22%),
+        #0b1020;
+      color:#eef2ff;
+      padding:24px;
+    }
+    .card{
+      width:min(100%, 680px);
+      background:#11182c;
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:24px;
+      padding:28px;
+      text-align:center;
+      box-shadow:0 18px 45px rgba(0,0,0,0.35);
+    }
+    .icon{
+      width:72px;
+      height:72px;
+      border-radius:20px;
+      display:grid;
+      place-items:center;
+      margin:0 auto 18px;
+      font-size:2rem;
+      background:linear-gradient(135deg,#ff4d67,#7c4dff);
+    }
+    h1{ margin:0 0 10px; }
+    p{ color:#b8c2e0; line-height:1.7; }
+    a{
+      display:inline-block;
+      margin-top:18px;
+      padding:14px 18px;
+      border-radius:14px;
+      background:linear-gradient(135deg,#ff4d67,#7c4dff);
+      color:white;
+      text-decoration:none;
+      font-weight:600;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">✓</div>
+    <h1>Order received</h1>
+    <p>
+      Thank you for your order. Your details have been sent successfully.
+      We’ll contact you soon for confirmation and payment / delivery details.
+    </p>
+    <a href="./index.html">Back to Store</a>
+  </div>
+</body>
+</html>
