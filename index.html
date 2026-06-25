@@ -3,21 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pikachu Prints | T-Shirt Printing Store</title>
+  <title>Pikachu Prints | Premium T-Shirt Store</title>
   <meta
     name="description"
     content="Custom printed T-shirts, anime tees, streetwear and personalized designs."
   />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet"
   />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- HEADER -->
+
+  <!-- =========================
+       HEADER
+  ========================== -->
   <header class="header">
     <div class="container nav">
       <a href="#home" class="logo">
@@ -32,19 +37,21 @@
         <a href="#contact">Contact</a>
       </nav>
 
-      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" type="button">☰</button>
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- =========================
+       HERO
+  ========================== -->
   <section class="hero" id="home">
     <div class="container hero-grid">
       <div class="hero-text">
-        <span class="tag">Custom T-Shirt Printing</span>
-        <h1>Print your vibe on a T-shirt.</h1>
+        <span class="tag">Premium Custom T-Shirt Printing</span>
+        <h1>Print your vibe with powerful premium style.</h1>
         <p>
           Anime tees, streetwear, custom logo prints, oversized fits and personalized gifts.
-          Choose a design or send your own design and place the order in minutes.
+          Choose a design or send your own design and place your order in minutes.
         </p>
 
         <div class="hero-actions">
@@ -55,15 +62,15 @@
         <div class="hero-features">
           <div class="feature-card">
             <strong>Premium Cotton</strong>
-            <span>Comfort fit & durable print</span>
+            <span>Comfort fit with durable long-lasting print</span>
           </div>
           <div class="feature-card">
             <strong>Custom Design</strong>
-            <span>Add your own text/logo/art</span>
+            <span>Add your own logo, text, anime art or branding</span>
           </div>
           <div class="feature-card">
             <strong>Fast Orders</strong>
-            <span>Simple order form to your email</span>
+            <span>Simple order form directly to our email</span>
           </div>
         </div>
       </div>
@@ -88,173 +95,256 @@
     </div>
   </section>
 
-   <!-- PRODUCTS -->
-  <section class="section" id="products">
+  <!-- =========================
+       PRODUCTS SLIDER
+  ========================== -->
+  <section class="section products-slider-section" id="products">
     <div class="container">
       <div class="section-head">
-        <h2>Featured T-Shirts</h2>
-        <p>Tap Buy Now and the order form will auto-fill the product for the customer.</p>
+        <span class="section-kicker">Featured Collection</span>
+        <h2>Our Premium T-Shirts</h2>
+        <p>
+          Slide through the collection. The center design is highlighted.
+          Tap Buy Now and the order form will auto-fill the product.
+        </p>
       </div>
 
-      <div class="products-grid">
-        <!-- Product 1 -->
-        <article class="product-card">
-          <div class="product-img">
-            <img src="tee1.jpg" alt="Anime Shadow Tee" />
-          </div>
-          <div class="product-body">
-            <h3>Anime Shadow Tee</h3>
-            <p>Bold anime streetwear print on premium cotton.</p>
-            <div class="product-meta">
-              <span class="price">₹699</span>
-              <span class="pill">Black</span>
-            </div>
-            <button
-              class="btn btn-primary buy-btn"
-              data-product="Anime Shadow Tee"
-              data-price="699"
-              type="button"
-            >
-              Buy Now
-            </button>
-          </div>
-        </article>
+      <div class="products-slider-wrap">
+        <!-- Left arrow -->
+        <button class="slider-arrow slider-arrow-left" id="prevProduct" type="button" aria-label="Previous product">
+          ‹
+        </button>
 
-        <!-- Product 2 -->
-        <article class="product-card">
-          <div class="product-img">
-            <img src="tee2.jpg" alt="Dragon Flame Tee" />
-          </div>
-          <div class="product-body">
-            <h3>Dragon Flame Tee</h3>
-            <p>High-energy fiery artwork print with soft fabric.</p>
-            <div class="product-meta">
-              <span class="price">₹749</span>
-              <span class="pill">White</span>
-            </div>
-            <button
-              class="btn btn-primary buy-btn"
-              data-product="Dragon Flame Tee"
-              data-price="749"
-              type="button"
-            >
-              Buy Now
-            </button>
-          </div>
-        </article>
+        <!-- Slider viewport -->
+        <div class="products-slider">
+          <div class="product-track" id="productTrack">
 
-        <!-- Product 3 -->
-        <article class="product-card">
-          <div class="product-img">
-            <img src="tee3.jpg" alt="Minimal Aura Tee" />
-          </div>
-          <div class="product-body">
-            <h3>Minimal Aura Tee</h3>
-            <p>Clean minimal style with premium chest print.</p>
-            <div class="product-meta">
-              <span class="price">₹649</span>
-              <span class="pill">Beige</span>
-            </div>
-            <button
-              class="btn btn-primary buy-btn"
-              data-product="Minimal Aura Tee"
-              data-price="649"
-              type="button"
-            >
-              Buy Now
-            </button>
-          </div>
-        </article>
+            <!-- Slide 1 -->
+            <article class="product-slide active">
+              <div class="product-card premium-card">
+                <div class="product-img">
+                  <img src="tee1.jpg" alt="Anime Shadow Tee" />
+                </div>
 
-        <!-- Product 4 -->
-        <article class="product-card">
-          <div class="product-img">
-            <img src="tee4.jpg" alt="Samurai Ink Tee" />
-          </div>
-          <div class="product-body">
-            <h3>Samurai Ink Tee</h3>
-            <p>Japanese brush-art inspired back print tee.</p>
-            <div class="product-meta">
-              <span class="price">₹799</span>
-              <span class="pill">Navy</span>
-            </div>
-            <button
-              class="btn btn-primary buy-btn"
-              data-product="Samurai Ink Tee"
-              data-price="799"
-              type="button"
-            >
-              Buy Now
-            </button>
-          </div>
-        </article>
+                <div class="product-body">
+                  <div class="product-topline">
+                    <span class="product-badge">Best Seller</span>
+                    <span class="product-color">Black</span>
+                  </div>
 
-        <!-- Product 5 -->
-        <article class="product-card">
-          <div class="product-img">
-            <img src="tee5.jpg" alt="Cyber Pulse Tee" />
-          </div>
-          <div class="product-body">
-            <h3>Cyber Pulse Tee</h3>
-            <p>Futuristic neon design with premium digital print.</p>
-            <div class="product-meta">
-              <span class="price">₹849</span>
-              <span class="pill">Grey</span>
-            </div>
-            <button
-              class="btn btn-primary buy-btn"
-              data-product="Cyber Pulse Tee"
-              data-price="849"
-              type="button"
-            >
-              Buy Now
-            </button>
-          </div>
-        </article>
+                  <h3>Anime Shadow Tee</h3>
+                  <p>Bold anime streetwear print on premium cotton with a strong aura look.</p>
 
-        <!-- Product 6 -->
-        <article class="product-card">
-          <div class="product-img">
-            <img src="tee6.jpg" alt="Custom Name Tee" />
+                  <div class="product-meta">
+                    <span class="price">₹699</span>
+                  </div>
+
+                  <button
+                    class="btn btn-primary buy-btn"
+                    data-product="Anime Shadow Tee"
+                    data-price="699"
+                    type="button"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 2 -->
+            <article class="product-slide">
+              <div class="product-card premium-card">
+                <div class="product-img">
+                  <img src="tee2.jpg" alt="Dragon Flame Tee" />
+                </div>
+
+                <div class="product-body">
+                  <div class="product-topline">
+                    <span class="product-badge">Hot Drop</span>
+                    <span class="product-color">White</span>
+                  </div>
+
+                  <h3>Dragon Flame Tee</h3>
+                  <p>Fiery high-energy design with soft premium fabric and powerful visual impact.</p>
+
+                  <div class="product-meta">
+                    <span class="price">₹749</span>
+                  </div>
+
+                  <button
+                    class="btn btn-primary buy-btn"
+                    data-product="Dragon Flame Tee"
+                    data-price="749"
+                    type="button"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 3 -->
+            <article class="product-slide">
+              <div class="product-card premium-card">
+                <div class="product-img">
+                  <img src="tee3.jpg" alt="Minimal Aura Tee" />
+                </div>
+
+                <div class="product-body">
+                  <div class="product-topline">
+                    <span class="product-badge">Clean Style</span>
+                    <span class="product-color">Beige</span>
+                  </div>
+
+                  <h3>Minimal Aura Tee</h3>
+                  <p>Minimal premium chest print tee for a clean and stylish everyday look.</p>
+
+                  <div class="product-meta">
+                    <span class="price">₹649</span>
+                  </div>
+
+                  <button
+                    class="btn btn-primary buy-btn"
+                    data-product="Minimal Aura Tee"
+                    data-price="649"
+                    type="button"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 4 -->
+            <article class="product-slide">
+              <div class="product-card premium-card">
+                <div class="product-img">
+                  <img src="tee4.jpg" alt="Samurai Ink Tee" />
+                </div>
+
+                <div class="product-body">
+                  <div class="product-topline">
+                    <span class="product-badge">Japanese Style</span>
+                    <span class="product-color">Navy</span>
+                  </div>
+
+                  <h3>Samurai Ink Tee</h3>
+                  <p>Brush-art inspired premium tee with bold samurai back-print aesthetics.</p>
+
+                  <div class="product-meta">
+                    <span class="price">₹799</span>
+                  </div>
+
+                  <button
+                    class="btn btn-primary buy-btn"
+                    data-product="Samurai Ink Tee"
+                    data-price="799"
+                    type="button"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 5 -->
+            <article class="product-slide">
+              <div class="product-card premium-card">
+                <div class="product-img">
+                  <img src="tee5.jpg" alt="Cyber Pulse Tee" />
+                </div>
+
+                <div class="product-body">
+                  <div class="product-topline">
+                    <span class="product-badge">Futuristic</span>
+                    <span class="product-color">Grey</span>
+                  </div>
+
+                  <h3>Cyber Pulse Tee</h3>
+                  <p>Neon futuristic digital print with a premium streetwear cyber vibe.</p>
+
+                  <div class="product-meta">
+                    <span class="price">₹849</span>
+                  </div>
+
+                  <button
+                    class="btn btn-primary buy-btn"
+                    data-product="Cyber Pulse Tee"
+                    data-price="849"
+                    type="button"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 6 -->
+            <article class="product-slide">
+              <div class="product-card premium-card">
+                <div class="product-img">
+                  <img src="tee6.jpg" alt="Custom Name Tee" />
+                </div>
+
+                <div class="product-body">
+                  <div class="product-topline">
+                    <span class="product-badge">Custom</span>
+                    <span class="product-color">Any Color</span>
+                  </div>
+
+                  <h3>Custom Name Tee</h3>
+                  <p>Add your own name, logo, quote or design to create your own personalized tee.</p>
+
+                  <div class="product-meta">
+                    <span class="price">₹899</span>
+                  </div>
+
+                  <button
+                    class="btn btn-primary buy-btn"
+                    data-product="Custom Name Tee"
+                    data-price="899"
+                    type="button"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+            </article>
+
           </div>
-          <div class="product-body">
-            <h3>Custom Name Tee</h3>
-            <p>Add your name, quote or logo to a clean front print tee.</p>
-            <div class="product-meta">
-              <span class="price">₹899</span>
-              <span class="pill">Custom</span>
-            </div>
-            <button
-              class="btn btn-primary buy-btn"
-              data-product="Custom Name Tee"
-              data-price="899"
-              type="button"
-            >
-              Buy Now
-            </button>
-          </div>
-        </article>
+        </div>
+
+        <!-- Right arrow -->
+        <button class="slider-arrow slider-arrow-right" id="nextProduct" type="button" aria-label="Next product">
+          ›
+        </button>
       </div>
+
+      <!-- Slider dots -->
+      <div class="slider-dots" id="productDots"></div>
     </div>
   </section>
 
-  <!-- CUSTOM PRINT -->
+  <!-- =========================
+       CUSTOM PRINT
+  ========================== -->
   <section class="section alt-section" id="custom">
     <div class="container custom-grid">
       <div>
         <div class="section-head left">
-          <h2>Custom T-Shirt Printing</h2>
+          <span class="section-kicker">Custom Printing</span>
+          <h2>Make Your Own T-Shirt Design</h2>
           <p>
-            Want your own logo, anime art, quote, business design, or team print?
+            Want your own logo, anime art, quote, business design or team print?
             Use the order form and mention your custom requirements.
           </p>
         </div>
 
         <ul class="custom-list">
-          <li>✔ Front / back print options</li>
-          <li>✔ Name print / logo print / anime print</li>
+          <li>✔ Front print / back print / both side print</li>
+          <li>✔ Name print / logo print / anime print / branding print</li>
           <li>✔ Single piece or bulk orders</li>
-          <li>✔ Mention color, size, quantity and print notes</li>
+          <li>✔ Mention color, size, quantity and full print notes</li>
         </ul>
 
         <button class="btn btn-primary open-custom-order" type="button">
@@ -278,11 +368,14 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- =========================
+       CONTACT
+  ========================== -->
   <section class="section" id="contact">
     <div class="container">
       <div class="section-head">
-        <h2>Contact / Quick Order</h2>
+        <span class="section-kicker">Contact & Orders</span>
+        <h2>Quick Order / Contact</h2>
         <p>
           Customers can use this form to order any T-shirt or ask for a custom print.
         </p>
@@ -292,14 +385,16 @@
         <div class="contact-copy">
           <h3>Need a custom design?</h3>
           <p>
-            Open the order form, choose “Custom Print Request”, and write the design details.
-            The order will be sent to your email.
+            Open the order form, choose <strong>Custom Print Request</strong>,
+            and write the design details. The order will be sent directly to our email.
           </p>
-          <button class="btn btn-primary open-custom-order" type="button">Place Order</button>
+          <button class="btn btn-primary open-custom-order" type="button">
+            Place Order
+          </button>
         </div>
 
         <div class="contact-note">
-          <h4>Owner instructions</h4>
+          <h4>Owner Email</h4>
           <p>
             Orders from this website will be sent to:
             <strong>mr.badboy.yash@gmail.com</strong>
@@ -309,12 +404,16 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- =========================
+       FOOTER
+  ========================== -->
   <footer class="footer">
     <div class="container footer-wrap">
       <div>
         <h3>Pikachu Prints</h3>
-        <p>Custom printed T-shirts for anime, streetwear and personal branding.</p>
+        <p>
+          Premium custom printed T-shirts for anime, streetwear and personal branding.
+        </p>
       </div>
 
       <div class="footer-links">
@@ -326,7 +425,9 @@
     </div>
   </footer>
 
-  <!-- ORDER MODAL -->
+  <!-- =========================
+       ORDER MODAL
+  ========================== -->
   <div class="modal" id="orderModal" aria-hidden="true">
     <div class="modal-overlay" id="modalOverlay"></div>
 
@@ -338,7 +439,6 @@
         <p>Fill the details. This order will be sent directly to our email.</p>
       </div>
 
-      <!-- FORM -->
       <form
         id="orderForm"
         class="order-form"
@@ -503,7 +603,6 @@
         </div>
       </form>
 
-      <!-- Hidden iframe for FormSubmit -->
       <iframe name="hidden_iframe" style="display:none;"></iframe>
     </div>
   </div>
